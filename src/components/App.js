@@ -8,13 +8,12 @@ import user from "../data/user";
 console.log(user);
 
 function App() {
-  return (
-    <div>
-      <NavBar />
-      <Home />
-      <About />
+  return (<div >
+    <NavBar />
+    <Home color={user.color} name={user.name} city={user.city} />
+    <About bio={user.bio} linkedin={user.links.linkedin} github={user.links.github}/>
     </div>
-  );
+    );
 }
 
 export default App;
